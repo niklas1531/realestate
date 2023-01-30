@@ -1,0 +1,231 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(235, 235, 235);
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Overview */
+.overview {
+  height: 100vh;
+  width: 100vw;
+  background: url('./images/h1.jpg');
+
+  /* filter: blur(1px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview .content {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.overview h1 {
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+  margin-bottom: 0 !important;
+}
+
+.overview h2 {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.overview .explore {
+  border: 1.5px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.overview .explore:hover {
+  background-color: rgb(255, 255, 255, .6);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 5%;
+  box-sizing: border-box;
+}
+
+nav .logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav .links button {
+  background: transparent;
+  border: none;
+}
+
+nav .profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  position: relative;
+  font-size: 20px;
+}
+
+nav a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(255, 255, 255, 0.8);
+  transition: .3s;
+}
+
+nav a:hover:before {
+  width: 100%;
+}
+
+/* Services */
+.services {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services .headings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services .fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.service-field {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  aspect-ratio: 2/1;
+  padding: 25px;
+  text-align: center;
+  box-shadow: rgb(0, 0, 0, 0.05) 0 6px 26px, rgb(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+/* Advantages */
+.advantages {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages .img-wrapper {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advantages .img-wrapper img {
+
+  transition: transform 0.8s;
+}
+
+.advantages .img-wrapper:hover img {
+  transform: scale(1.5);
+}
+
+.advantages .text {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 60px;
+}
+
+.advantages .text h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.advantages .text p {
+  line-height: 2;
+}
+
+.advantages .text button {
+  background-color: rgb(0, 0, 0);
+  border: 1.5px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.advantages .text button:hover {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.advantages .text li {
+  margin: 30px 0;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+.advantages .text li:before {
+  content: '✔️';
+  position: absolute;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  background-image: url('./images//checked.png');
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 5%;
+  text-align: right;
+}
+
+footer hr {
+  border: 1px solid rgb(0,0,0,.2);
+}
